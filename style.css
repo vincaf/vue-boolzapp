@@ -1,3 +1,5 @@
+/* Background */
+
 body{
     background-color: #d9dbd4;
 }
@@ -8,6 +10,8 @@ body{
     background-color: #009688;
 }
 
+
+/* Container principale della chat */
 #container-chat{
     width: 1200px;
     height: 650px;
@@ -19,24 +23,23 @@ body{
     flex-wrap: nowrap;
 }
 
+/* Wrapper sinistro */
 #chat-list{
     width: 30%;
-    /* colore da eliminare dopo creazione elementi */
-    background-color: aqua;
     height: 650px;
     display: flex;
     flex-direction: column;
 }
 
+/* Wrapper destro */
 #chat-screen{
     width: 70%;
-    /* colore da eliminare dopo creazione elementi */
-    background-color: purple;
     height: 650px;
     display: flex;
     flex-direction: column;
 }
 
+/* Header con info utente */
 .header-chat{
     background-color: #eaeaea;
 }
@@ -52,6 +55,7 @@ body{
     color: #b1b1b1;
 }
 
+/* Notifiche */
 #chat-list .notification{
     background-color: #8edafc;
 }
@@ -70,6 +74,7 @@ body{
     color: #748a90;
 }
 
+/* Ricerca */
 #chat-list .search{
     background-color: #fafafa;
 }
@@ -83,12 +88,17 @@ body{
     font-size: 12px;
 }
 
+/* Lista contatti */
 #chat-list .accounts-list{
     background-color: #fff;
     height: 100%;
     display: flex;
     flex-direction: column;
     overflow-y: scroll;
+}
+
+.account{
+    cursor: pointer;
 }
 
 .account img{
@@ -122,11 +132,13 @@ body{
     font-weight: 500;
 }
 
+/* Chat principale */
 #chat-screen .chat{
     background-image: url(./img/mine.jpg);
     height: 100%;
 }
 
+/* Input di invio messaggio */
 #chat-screen .chat-message{
     background-color: #f3eeea;
 }
