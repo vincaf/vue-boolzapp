@@ -69,3 +69,16 @@ body{
     font-size: 10px;
     color: #748a90;
 }
+
+#chat-list .search{
+    background-color: #fafafa;
+}
+
+.search i{
+    color: #b6b9bb;
+    font-size: 12px;
+}
+
+.search .form-control{
+    font-size: 12px;
+}
