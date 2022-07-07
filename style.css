@@ -15,4 +15,22 @@ body{
     position: absolute;
     top: 5%;
     left: 10%;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+#chat-list{
+    width: 30%;
+    background-color: aqua;
+    height: 650px;
+    display: flex;
+    flex-direction: column;
+}
+
+#chat-screen{
+    width: 70%;
+    background-color: purple;
+    height: 650px;
+    display: flex;
+    flex-direction: column;
 }
