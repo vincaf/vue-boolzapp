@@ -79,7 +79,7 @@ body{
     font-size: 12px;
 }
 
-.search .form-control{
+.form-control{
     font-size: 12px;
 }
 
@@ -120,4 +120,13 @@ body{
     font-size: 10px;
     color: #808592;
     font-weight: 500;
+}
+
+#chat-screen .chat{
+    background-image: url(./img/mine.jpg);
+    height: 100%;
+}
+
+#chat-screen .chat-message{
+    background-color: #f3eeea;
 }
