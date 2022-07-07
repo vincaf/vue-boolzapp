@@ -14,7 +14,7 @@ body{
     background-color: #fff;
     position: absolute;
     top: 5%;
-    left: 10%;
+    left: 11%;
     display: flex;
     flex-wrap: nowrap;
 }
@@ -37,11 +37,11 @@ body{
     flex-direction: column;
 }
 
-#chat-list .header-chat{
+.header-chat{
     background-color: #eaeaea;
 }
 
-.user-profile img{
+.header-chat img{
     width: 50px;
     border-radius: 50%;
     object-fit: cover;
@@ -97,7 +97,7 @@ body{
     object-fit: cover;
 }
 
-.account .account-name{
+.account-name{
     font-size: 15px;
     font-weight: 600;
 }
@@ -114,4 +114,10 @@ body{
 
 .account:hover{
     background-color: #e9ebeb;
+}
+
+.user-profile .last-access{
+    font-size: 10px;
+    color: #808592;
+    font-weight: 500;
 }
