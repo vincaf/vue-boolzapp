@@ -34,3 +34,18 @@ body{
     display: flex;
     flex-direction: column;
 }
+
+.header-chat{
+    background-color: #eaeaea;
+}
+
+.user-profile img{
+    width: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.icons i{
+    font-size: 20px;
+    color: #b1b1b1;
+}
