@@ -21,6 +21,7 @@ body{
 
 #chat-list{
     width: 30%;
+    /* colore da eliminare dopo creazione elementi */
     background-color: aqua;
     height: 650px;
     display: flex;
@@ -29,13 +30,14 @@ body{
 
 #chat-screen{
     width: 70%;
+    /* colore da eliminare dopo creazione elementi */
     background-color: purple;
     height: 650px;
     display: flex;
     flex-direction: column;
 }
 
-.header-chat{
+#chat-list .header-chat{
     background-color: #eaeaea;
 }
 
@@ -48,4 +50,22 @@ body{
 .icons i{
     font-size: 20px;
     color: #b1b1b1;
+}
+
+#chat-list .notification{
+    background-color: #8edafc;
+}
+
+.notification i{
+    color: #8edafc;
+}
+
+.notification .receive-notif{
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.notification .notif-desktop{
+    font-size: 10px;
+    color: #748a90;
 }
