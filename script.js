@@ -170,5 +170,15 @@ const root = new Vue(
                 }
             ]
         },
+
+        methods: {
+            getImage: function(index){
+                return './img/avatar' + this.contacts[index].avatar + '.jpg';
+            }
+
+        },
+
+        created() {
+        },
     }
 );

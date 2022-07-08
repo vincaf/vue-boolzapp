@@ -54,7 +54,7 @@
 
                         <div class="account d-flex justify-content-between p-2" v-for="(contact, index) in contacts">
                             <div class="d-flex">
-                                <img src="./img/avatar_1.jpg" alt="user">
+                                <img :src="getImage(index)" alt="user">
                                 <span class="mx-2">
                                     <div class="account-name">{{ contact.name }}</div>
                                     <div class="last-message">Ultimo messaggio inviato</div>
