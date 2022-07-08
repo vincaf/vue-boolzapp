@@ -174,8 +174,11 @@ const root = new Vue(
         methods: {
             getImage: function(index){
                 return './img/avatar' + this.contacts[index].avatar + '.jpg';
-            }
+            },
 
+            setActiveIndex: function(index){
+                this.activeIndex = index;
+            }
         },
 
         created() {

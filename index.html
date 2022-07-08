@@ -52,7 +52,7 @@
                     <!-- Lista contatti importati da Vue JS-->
                     <div class="accounts-list">
 
-                        <div class="account d-flex justify-content-between p-2" v-for="(contact, index) in contacts">
+                        <div class="account d-flex justify-content-between p-2" v-for="(contact, index) in contacts" @click="setActiveIndex(index)" :class="{ activeContact: activeIndex === index }">
                             <div class="d-flex">
                                 <img :src="getImage(index)" alt="user">
                                 <span class="mx-2">
@@ -150,9 +150,9 @@
                     <!-- Info utente contattato -->
                     <div class="header-chat d-flex justify-content-between p-2">
                         <div class="user-profile d-flex align-items-center">
-                            <img src="./img/avatar_1.jpg" alt="userPic">
+                            <img :src="getImage(activeIndex)" alt="userPic">
                             <div class="mx-2 align-middle">
-                                <div class="account-name">Michele</div>
+                                <div class="account-name">{{ contacts[activeIndex].name }}</div>
                                 <div class="last-access">Ultimo accesso oggi alle 12:00</div>                                
                             </div>
                         </div>

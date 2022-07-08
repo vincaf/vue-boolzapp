@@ -133,6 +133,12 @@ body{
     font-weight: 500;
 }
 
+/* Classe active per la chat selezionata */
+
+.activeContact{
+    background-color: #e9ebeb;
+}
+
 /* Chat principale */
 #chat-screen .chat{
     background-image: url(./img/mine.jpg);
