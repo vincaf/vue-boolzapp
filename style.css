@@ -139,6 +139,37 @@ body{
     height: 100%;
 }
 
+.container-message{
+    width: 100%;
+    padding: 40px;
+    margin: 0 auto;
+}
+
+.my-message-box{
+    width: 300px;
+    padding: 15px;
+    background-color: #d5f9ba;
+    border-radius: 10px;
+}
+
+.message{
+    font-size: 13px;
+}
+
+.message-hours{
+    font-size: 10px;
+    color: #b1b1b1;
+    position: relative;
+    top: 18px;
+}
+
+.user-message-box{
+    width: 300px;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
 /* Input di invio messaggio */
 #chat-screen .chat-message{
     background-color: #f3eeea;
