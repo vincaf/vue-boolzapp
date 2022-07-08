@@ -126,6 +126,7 @@ body{
     background-color: #e9ebeb;
 }
 
+/* Ultimo accesso in info utente contattato */
 .user-profile .last-access{
     font-size: 10px;
     color: #808592;
