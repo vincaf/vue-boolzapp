@@ -5,6 +5,7 @@ const root = new Vue(
         data: {
 
             activeIndex: 0,
+            msgToReceive: 'Va bene!',
 
             contacts: [
                 {
@@ -192,8 +193,17 @@ const root = new Vue(
                         }
                     );
                     this.newMessage = '';
+
+                    setTimeout(()=>{
+                        this.contacts[this.activeIndex].messages.push(
+                            {
+                                message: this.msgToReceive,
+                                status : 'received'
+                            }
+                        )
+                    },3000)
                 }
-            }
+            },
         },
 
         created() {
