@@ -178,6 +178,21 @@ const root = new Vue(
 
             setActiveIndex: function(index){
                 this.activeIndex = index;
+            },
+
+            sendMessage: function (currentMessage) {
+                if (currentMessage == ""){
+                    console.warn('Messaggio vuoto non valido!');
+                } else {
+                    this.contacts[this.activeIndex].messages.push(
+                        {
+                            date: '09/07/2022 21:00:00',
+                            message: currentMessage,
+                            status: 'sent',
+                        }
+                    );
+                    this.newMessage = '';
+                }
             }
         },
 

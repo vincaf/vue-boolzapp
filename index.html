@@ -166,7 +166,7 @@
                     <!-- Chat principale -->
                     <div class="chat">
                         <div class="container-message d-flex flex-column">
-                            <div class="d-flex justify-content-between mb-1" :class="(oneMessage.status == 'sent') ? 'my_message_box' : 'user_message_box'" v-for="oneMessage in contacts[activeIndex].messages">
+                            <div class="d-flex justify-content-between mb-2" :class="(oneMessage.status == 'sent') ? 'my_message_box' : 'user_message_box'" v-for="oneMessage in contacts[activeIndex].messages">
                                 <div class="message">{{ oneMessage.message }}</div>
                                 <div class="message-hours">15:30</div>
                             </div>
@@ -176,7 +176,7 @@
                     <!-- Input di invio messaggio -->
                     <div class="chat-message p-3 d-flex align-items-center">
                         <span><i class="fa-regular fa-face-smile fs-5 px-3 text-secondary"></i></span>
-                        <input type="text" class="form-control" placeholder="Scrivi un messaggio">
+                        <input type="text" class="form-control" placeholder="Scrivi un messaggio" v-model.trim="newMessage" @keyUp.enter="sendMessage(newMessage)">
                         <span><i class="fa-solid fa-microphone fs-5 ps-4 px-3 text-secondary"></i></span>
                     </div>
 
