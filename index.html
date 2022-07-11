@@ -60,7 +60,7 @@
                                     <div class="last-message">{{ contact.messages[contact.messages.length - 1].message }}</div>
                                 </span>
                             </div>
-                            <div class="hours">12:00</div>
+                            <div class="hours">{{ getTime(contact.messages[contact.messages.length-1].date) }}</div>
                         </div>
 
                         <!-- *** LAYOUT STATICO *** -->
@@ -153,7 +153,9 @@
                             <img :src="getImage(activeIndex)" alt="userPic">
                             <div class="mx-2 align-middle">
                                 <div class="account-name">{{ contacts[activeIndex].name }}</div>
-                                <div class="last-access">Ultimo accesso oggi alle 12:00</div>                                
+                                <div class="last-access">
+                                    {{'Ultimo accesso il giorno ' + getDate(contacts[activeIndex].messages[contacts[activeIndex].messages.length-1].date) + ' alle ' + getTime(contacts[activeIndex].messages[contacts[activeIndex].messages.length-1].date) }}
+                                </div>                                
                             </div>
                         </div>
                         <div class="icons d-flex align-items-center">
@@ -168,7 +170,7 @@
                         <div class="container-message d-flex flex-column">
                             <div class="d-flex justify-content-between mb-2" :class="(oneMessage.status == 'sent') ? 'my_message_box' : 'user_message_box'" v-for="oneMessage in contacts[activeIndex].messages">
                                 <div class="message">{{ oneMessage.message }}</div>
-                                <div class="message-hours">15:30</div>
+                                <div class="message-hours">{{ getTime(oneMessage.date) }}</div>
                             </div>
                         </div>
                     </div>

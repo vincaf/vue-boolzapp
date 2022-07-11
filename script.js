@@ -5,6 +5,7 @@ const root = new Vue(
         data: {
 
             activeIndex: 0,
+            newMessage: "",
             msgToReceive: 'Va bene!',
             searchChat: "",
 
@@ -210,6 +211,18 @@ const root = new Vue(
                 let contactName = this.contacts[index].name.toLowerCase();
                 let nameSearched = this.searchChat.toLowerCase();
                 return (contactName.startsWith(nameSearched));
+            },
+
+            getTime: function (date) {
+                const dateArray = date.split(" ");
+                const timeSplitted = dateArray[1].split(':');
+                const hours = timeSplitted[0] + ':' + timeSplitted[1];
+                return hours;
+            },
+
+            getDate: function (date) {
+                const dateArray = date.split(" ");
+                return dateArray[0];
             },
         },
 

@@ -159,6 +159,7 @@ body{
     background-color: #d5f9ba;
     border-radius: 10px;
     align-self: flex-end;
+    position: relative;
 }
 
 .message{
@@ -168,8 +169,9 @@ body{
 .message-hours{
     font-size: 10px;
     color: #b1b1b1;
-    position: relative;
-    top: 18px;
+    position: absolute;
+    bottom: 0;
+    right: 10px;
 }
 
 .user_message_box{
@@ -178,6 +180,7 @@ body{
     background-color: #fff;
     border-radius: 10px;
     align-self: flex-start;
+    position: relative;
 }
 
 /* Input di invio messaggio */
