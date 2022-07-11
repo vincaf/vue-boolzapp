@@ -204,6 +204,7 @@ const root = new Vue(
                     },3000)
                 }
             },
+
         },
 
         created() {

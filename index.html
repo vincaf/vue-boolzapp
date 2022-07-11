@@ -57,7 +57,7 @@
                                 <img :src="getImage(index)" alt="user">
                                 <span class="mx-2">
                                     <div class="account-name">{{ contact.name }}</div>
-                                    <div class="last-message" v-for="(lastMessage, index) in contact.messages">{{ lastMessage.message }}</div>
+                                    <div class="last-message">{{ contact.messages[contact.messages.length - 1].message }}</div>
                                 </span>
                             </div>
                             <div class="hours">12:00</div>
