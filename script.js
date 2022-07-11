@@ -5,7 +5,7 @@ const root = new Vue(
         data: {
 
             activeIndex: 0,
-            msgToReceive: 'Va bene!',
+            msgToReceive: 'Va bene, ma perchè?',
 
             contacts: [
                 {
