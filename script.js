@@ -5,7 +5,8 @@ const root = new Vue(
         data: {
 
             activeIndex: 0,
-            msgToReceive: 'Va bene, ma perchè?',
+            msgToReceive: 'Va bene!',
+            searchChat: "",
 
             contacts: [
                 {
@@ -205,6 +206,11 @@ const root = new Vue(
                 }
             },
 
+            searchContact: function(index){
+                let contactName = this.contacts[index].name.toLowerCase();
+                let nameSearched = this.searchChat.toLowerCase();
+                return (contactName.startsWith(nameSearched));
+            },
         },
 
         created() {

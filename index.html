@@ -45,14 +45,14 @@
                     <div class="search p-2">
                         <div class="input-group flex-nowrap">
                             <span class="input-group-text bg-white" id="addon-wrapping"><i class="fa-solid fa-magnifying-glass"></i></span>
-                            <input type="text" class="form-control" placeholder="Cerca o inizia una nuova chat" aria-label="search" aria-describedby="addon-wrapping">
+                            <input type="text" v-model="searchChat" class="form-control" placeholder="Cerca o inizia una nuova chat" aria-label="search" aria-describedby="addon-wrapping">
                         </div>
                     </div>
 
                     <!-- Lista contatti importati da Vue JS-->
                     <div class="accounts-list">
 
-                        <div class="account d-flex justify-content-between p-2" v-for="(contact, index) in contacts" @click="setActiveIndex(index)" :class="{ activeContact: activeIndex === index }">
+                        <div class="account d-flex justify-content-between p-2" v-for="(contact, index) in contacts" v-if="searchContact(index)" @click="setActiveIndex(index)" :class="{ activeContact: activeIndex === index }">
                             <div class="d-flex">
                                 <img :src="getImage(index)" alt="user">
                                 <span class="mx-2">
