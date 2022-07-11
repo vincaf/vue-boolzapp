@@ -5,9 +5,9 @@ const root = new Vue(
         data: {
 
             activeIndex: 0,
-            newMessage: "",
             msgToReceive: 'Va bene!',
             searchChat: "",
+            newMessage: "",
 
             contacts: [
                 {
@@ -189,7 +189,7 @@ const root = new Vue(
                 } else {
                     this.contacts[this.activeIndex].messages.push(
                         {
-                            date: '09/07/2022 21:00:00',
+                            date: '12/07/2022 15:47:00',
                             message: currentMessage,
                             status: 'sent',
                         }
@@ -199,11 +199,12 @@ const root = new Vue(
                     setTimeout(()=>{
                         this.contacts[this.activeIndex].messages.push(
                             {
+                                date: '12/07/2022 15:47:55',
                                 message: this.msgToReceive,
                                 status : 'received'
                             }
                         )
-                    },3000)
+                    },2000)
                 }
             },
 
